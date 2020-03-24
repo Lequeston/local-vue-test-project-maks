@@ -7,9 +7,9 @@
 </template>
 
 <script>
-    import Logo from './Logo.vue';
-    import Menu from "@/components/Menu";
-    import Info from "@/components/Info";
+    import Logo from './Header/Logo.vue';
+    import Menu from "./Header/Menu.vue";
+    import Info from "./Header/Info.vue";
 
     export default {
         name: "Header",
@@ -19,7 +19,7 @@
 
 <style scoped>
     header {
-        background-color: black;
+        background-color: slategray;
         width: 100%;
         height: 100px;
         position: relative;

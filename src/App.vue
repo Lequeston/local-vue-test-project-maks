@@ -8,5 +8,7 @@
   *{
     margin: 0;
     padding: 0;
+    font-family: Geometria,Arial,sans-serif;
+    color: white;
   }
 </style>

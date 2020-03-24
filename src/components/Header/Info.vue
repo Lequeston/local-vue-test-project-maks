@@ -29,20 +29,14 @@
     }
 
     #numberPhone {
-        color: white;
-        font-family: futura medium c,Arial,sans-serif;
         font-size: 20px;
     }
 
     #workingHours {
-        color: white;
-        font-family: futura medium c,Arial,sans-serif;
         font-size: 15px;
     }
 
     #town {
-        color: white;
-        font-family: futura medium c,Arial,sans-serif;
         font-size: 15px;
     }
 </style>

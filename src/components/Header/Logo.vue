@@ -12,7 +12,7 @@
         name: "Logo.vue",
         data(){
             return{
-                link: 'https://banner2.cleanpng.com/20181106/icw/kisspng-google-chrome-app-computer-icons-web-browser-porta-chrome-svg-png-icon-free-download-318446-onli-5be2620f1e42f7.002521951541562895124.jpg',
+                link: 'https://c7.hotpng.com/preview/1009/720/961/logo-hawk-bird-bird.jpg',
                 picture: Image,
                 titleHomeWordsArray: ['Название', 'Сайта'],
             }
@@ -46,6 +46,7 @@
         text-align: center;
         object-fit: contain;
         height: 100%;
+        border-radius: 50%;
     }
 
     #text-block {

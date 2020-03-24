@@ -1,0 +1,100 @@
+<template>
+    <div id="registration">
+        <div id="legend"> Связаться с нами </div>
+        <form id="input-form">
+            <input
+                    v-for="(name, index) in registration"
+                    class="registration-input"
+                    :placeholder="name"
+                    :key="index"
+            >
+            <textarea :placeholder="information" class="registration-input"></textarea>
+            <input type="submit" :value="buttonText" id="button">
+        </form>
+    </div>
+</template>
+
+<script>
+    export default {
+        name: "Registration",
+        data(){
+            return {
+                registration: {
+                    name: 'Как вас зовут?',
+                    email: 'E-mail',
+                    numberPhone: 'Телефон',
+                },
+                information: 'Ваш комментарий',
+                buttonText: 'Отправить',
+            }
+        }
+    }
+</script>
+
+<style scoped>
+    #registration{
+        display: flex;
+        flex-direction: column;
+        margin: 20px 25% 20px 25%;
+        width: 50%;
+        height: 760px;
+        border: 3px solid slategray;
+        box-sizing: content-box;
+        text-align: center;
+        padding: 5% 0 5% 0;
+    }
+
+    #legend {
+        color: black;
+        font-size: 36px;
+        font-weight: 600;
+    }
+
+    .registration-input{
+        border: 1px solid #d6d6d6;
+        border-top: 0;
+        border-left: 0;
+        border-right: 0;
+        height: 70px;
+        font-size: 20px;
+        margin: 5% 0 5% 0;
+        color: lightgray;
+    }
+
+    .registration-input:valid{
+        color: black;
+    }
+
+    #input-form {
+        display: flex;
+        flex-direction: column;
+        padding: 5% 5% 0 5%;
+        height: 100%;
+    }
+
+    #button {
+        color: lightgray;
+        width: 320px;
+        height: 60px;
+        opacity: 0.3;
+        padding: 5px 15px;
+        border: 1px solid #3857dc;
+        border-radius: 100px;
+        float: right;
+        text-decoration: none;
+        font-family: Helvetica;
+        font-size: 14px;
+        color: #3857dc;
+        letter-spacing: 0;
+        line-height: 21px;
+        text-align: center;
+        margin: 5% auto 0 auto;
+    }
+
+    #button:hover{
+        background: #3857dc;
+        color: #FFFFFF;
+        letter-spacing: 0;
+        line-height: 21px;
+    }
+</style>
