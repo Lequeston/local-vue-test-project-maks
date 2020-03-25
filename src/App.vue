@@ -4,9 +4,9 @@
   </div>
 </template>
 
-<style>
-  *{
-    margin: 0;
-    padding: 0;
-  }
+<style lang="sass">
+  *
+    margin: 0
+    padding: 0
+    font-family: Geometria,Arial,sans-serif
 </style>

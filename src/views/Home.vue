@@ -1,16 +1,15 @@
-<template>
-  <div class="home">
-    <Header />
-    <Main />
-    <Footer />
-  </div>
+<template lang="pug">
+  div(class="home")
+    Header
+    Main
+    Footer
 </template>
 
 <script>
 
-import Header from "@/components/Header";
-import Main from "@/components/Main";
-import Footer from "@/components/Footer";
+import Header from "@/components/Header.vue";
+import Main from "@/components/Main.vue";
+import Footer from "@/components/Footer.vue";
 
 export default {
   name: 'Home',
@@ -22,11 +21,9 @@ export default {
 }
 </script>
 
-<style scoped>
-  .home{
-    height: 2000px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
+<style lang="sass" scoped>
+  .home
+    display: flex
+    flex-direction: column
+    justify-content: space-between
 </style>
