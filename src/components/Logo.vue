@@ -39,7 +39,7 @@
         width: 20%;
         margin: 0;
         justify-content: center;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
     }
 
     #picture{

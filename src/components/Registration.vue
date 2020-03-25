@@ -1,14 +1,15 @@
 <template>
     <div id="registration">
         <div id="legend"> Связаться с нами </div>
-        <form id="input-form">
+        <form id="input-form" method="post">
             <input
-                    v-for="(name, index) in registration"
+                    v-for="(name, property) in registration"
                     class="registration-input"
                     :placeholder="name"
-                    :key="index"
+                    :key="property"
+                    :name="property"
             >
-            <textarea :placeholder="information" class="registration-input"></textarea>
+            <textarea name="information" :placeholder="information" class="registration-input"></textarea>
             <input type="submit" :value="buttonText" id="button">
         </form>
     </div>

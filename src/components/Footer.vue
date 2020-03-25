@@ -1,19 +1,27 @@
 <template>
     <footer>
-
+        <Logo />
     </footer>
 </template>
 
 <script>
+    import Logo from "./Logo.vue";
+
     export default {
-        name: "Footer"
+        name: "Footer",
+        components: {Logo}
     }
 </script>
 
 <style scoped>
     footer {
+        background-color: slategray;
         width: 100%;
         height: 80px;
-        background-color: black;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        padding: 1% 5% 1% 5%;
+        box-sizing: border-box;
     }
 </style>

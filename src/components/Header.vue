@@ -7,9 +7,9 @@
 </template>
 
 <script>
-    import Logo from './Header/Logo.vue';
-    import Menu from "./Header/Menu.vue";
-    import Info from "./Header/Info.vue";
+    import Logo from './Logo.vue';
+    import Menu from "./Menu.vue";
+    import Info from "./Info.vue";
 
     export default {
         name: "Header",
@@ -21,8 +21,8 @@
     header {
         background-color: slategray;
         width: 100%;
-        height: 100px;
-        position: relative;
+        height: 80px;
+        position: fixed;
         display: flex;
         flex-direction: row;
         padding: 1% 5% 1% 5%;
