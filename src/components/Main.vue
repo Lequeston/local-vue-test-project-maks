@@ -1,13 +1,12 @@
-<template>
-    <div id="body">
-        <InformationBlock
+<template lang="pug">
+    div(id="body")
+        InformationBlock(
                 v-for="info in informationBlocks"
                 :key="info.id"
                 v-bind="getInfo(info)"
-        />
-        <Registration />
-        <GeneralInformation />
-    </div>
+        )
+        Registration
+        GeneralInformation
 </template>
 
 <script>
@@ -69,11 +68,10 @@
     }
 </script>
 
-<style scoped>
-    #body {
-        padding: 5% 0 5% 0;
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-    }
+<style lang="sass" scoped>
+    #body
+        padding: 5% 0 5% 0
+        display: flex
+        flex-direction: column
+        width: 100%
 </style>

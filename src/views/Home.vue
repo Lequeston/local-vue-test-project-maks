@@ -1,9 +1,8 @@
-<template>
-  <div class="home">
-    <Header/>
-    <Main />
-    <Footer />
-  </div>
+<template lang="pug">
+  div(class="home")
+    Header
+    Main
+    Footer
 </template>
 
 <script>
@@ -22,10 +21,9 @@ export default {
 }
 </script>
 
-<style scoped>
-  .home{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
+<style lang="sass" scoped>
+  .home
+    display: flex
+    flex-direction: column
+    justify-content: space-between
 </style>

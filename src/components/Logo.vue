@@ -1,10 +1,8 @@
-<template>
-    <div id="logo">
-        <img :src="picture.src" :alt="loadLogo" id="picture">
-        <div id="text-block">
-            <p v-for="word in titleHomeWordsArray" class="text"> {{ word }}</p>
-        </div>
-    </div>
+<template lang="pug">
+    div(id="logo")
+        img(:src="picture.src" :alt="loadLogo" id="picture")
+        div(id="text-block")
+            p(v-for="word in titleHomeWordsArray" class="text") {{ word }}
 </template>
 
 <script>
@@ -32,30 +30,28 @@
     }
 </script>
 
-<style scoped>
-    #logo {
-        display: flex;
-        flex-direction: row;
-        width: 20%;
-        margin: 0;
-        justify-content: center;
-        flex-wrap: nowrap;
-    }
+<style lang="sass" scoped>
+    #logo
+        display: flex
+        flex-direction: row
+        width: 20%
+        margin: 0
+        justify-content: center
+        flex-wrap: nowrap
+        color: white
 
-    #picture{
-        text-align: center;
-        object-fit: contain;
-        height: 100%;
-        border-radius: 50%;
-    }
+        #picture
+            text-align: center
+            object-fit: contain
+            height: 100%
+            border-radius: 50%
 
-    #text-block {
-        display: flex;
-        color: white;
-        font-size: 20px;
-        font-family: futura book c,Arial,sans-serif;
-        margin: 0 auto 0 10px;
-        flex-direction: column;
-        justify-content: center;
-    }
+        #text-block
+            display: flex
+            color: white
+            font-size: 20px
+            font-family: futura book c,Arial,sans-serif
+            margin: 0 auto 0 10px
+            flex-direction: column
+            justify-content: center
 </style>

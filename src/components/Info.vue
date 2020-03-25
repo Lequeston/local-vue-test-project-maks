@@ -1,9 +1,8 @@
-<template>
-    <div id="info">
-        <div id="numberPhone">{{ numberPhone }}</div>
-        <div id="workingHours">{{ workingHours }}</div>
-        <div id="town">{{ town }}</div>
-    </div>
+<template lang="pug">
+    div(id="info")
+        div(id="numberPhone") {{ numberPhone }}
+        div(id="workingHours") {{ workingHours }}
+        div(id="town") {{ town }}
 </template>
 
 <script>
@@ -19,24 +18,21 @@
     }
 </script>
 
-<style scoped>
-    #info {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        flex: 1;
-        width: 20%;
-    }
+<style lang="sass" scoped>
+    #info
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        flex: 1
+        width: 20%
+        color: white
 
-    #numberPhone {
-        font-size: 20px;
-    }
+        #numberPhone
+            font-size: 20px
 
-    #workingHours {
-        font-size: 15px;
-    }
+        #workingHours
+            font-size: 15px
 
-    #town {
-        font-size: 15px;
-    }
+        #town
+            font-size: 15px
 </style>

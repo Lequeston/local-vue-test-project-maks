@@ -1,7 +1,5 @@
-<template>
-    <div id="menu">
-
-    </div>
+<template lang="pug">
+    div(id="menu")
 </template>
 
 <script>
@@ -10,12 +8,11 @@
     }
 </script>
 
-<style scoped>
-    #menu {
-        display: flex;
-        flex-direction: row;
-        width: 50%;
-        margin: 0 5% 0 5%;
-        height: 100%;
-    }
+<style lang="sass" scoped>
+    #menu
+        display: flex
+        flex-direction: row
+        width: 50%
+        margin: 0 5% 0 5%
+        height: 100%
 </style>

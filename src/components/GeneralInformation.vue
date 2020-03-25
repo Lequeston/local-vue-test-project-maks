@@ -1,8 +1,7 @@
-<template>
-    <div id="block-text">
-        <h5 id="title">{{title}}</h5>
-        <p id="text">{{text}}</p>
-    </div>
+<template lang="pug">
+    div(id="block-text")
+        h5(id="title") {{title}}
+        p(id="text") {{text}}
 </template>
 
 <script>
@@ -35,19 +34,17 @@
     }
 </script>
 
-<style scoped>
-    #block-text{
-        margin-top: 3%;
-        width: 90%;
-        padding: 3% 5% 3% 5%;
-        height: auto;
-    }
-    #title{
-        color: black;
-    }
-    #text{
-        margin-top: 1%;
-        color: black;
-        white-space: pre-wrap;
-    }
+<style lang="sass" scoped>
+    #block-text
+        margin-top: 3%
+        width: 90%
+        padding: 3% 5% 3% 5%
+        height: auto
+        color: black
+
+        #title
+
+        #text
+            margin-top: 1%
+            white-space: pre-wrap
 </style>

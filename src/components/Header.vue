@@ -1,9 +1,8 @@
-<template>
-    <header>
-        <Logo />
-        <Menu />
-        <Info />
-    </header>
+<template lang="pug">
+    header
+        Logo
+        Menu
+        Info
 </template>
 
 <script>
@@ -17,15 +16,14 @@
     }
 </script>
 
-<style scoped>
-    header {
-        background-color: slategray;
-        width: 100%;
-        height: 80px;
-        position: fixed;
-        display: flex;
-        flex-direction: row;
-        padding: 1% 5% 1% 5%;
-        box-sizing: border-box;
-    }
+<style lang="sass" scoped>
+    header
+        background-color: slategray
+        width: 100%
+        height: 80px
+        position: fixed
+        display: flex
+        flex-direction: row
+        padding: 1% 5% 1% 5%
+        box-sizing: border-box
 </style>
