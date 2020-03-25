@@ -36,7 +36,7 @@
     #registration{
         display: flex;
         flex-direction: column;
-        margin: 20px 25% 20px 25%;
+        margin: 5% 25% 0 25%;
         width: 50%;
         height: 760px;
         border: 3px solid slategray;

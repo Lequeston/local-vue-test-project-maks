@@ -5,7 +5,7 @@
         </div>
         <div id="info-block">
             <h4 id="title">{{title | uppercase}}</h4>
-            <p id="price">{{price | priceFilter}}</p>
+            <div id="price">{{price | priceFilter}}</div>
             <div id="brief-information">{{briefInformation}}</div>
             <div id="block-date">
                 <div id="start">{{startDate}}</div>
@@ -97,6 +97,7 @@
     }
 
     #price{
+        flex-wrap: nowrap;
         color: inherit;
         float: right;
         flex-basis: 20%;

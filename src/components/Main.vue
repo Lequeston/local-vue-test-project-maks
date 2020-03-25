@@ -6,15 +6,17 @@
                 v-bind="getInfo(info)"
         />
         <Registration />
+        <GeneralInformation />
     </div>
 </template>
 
 <script>
     import Registration from "@/components/Registration.vue";
-    import InformationBlock from "@/components/InformationBlock";
+    import InformationBlock from "@/components/InformationBlock.vue";
+    import GeneralInformation from "@/components/GeneralInformation.vue";
     export default {
         name: "Main",
-        components: {InformationBlock, Registration},
+        components: {GeneralInformation, InformationBlock, Registration},
         data(){
             return{
                 informationBlocks: [
