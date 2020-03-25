@@ -14,7 +14,7 @@
 
 <style lang="sass" scoped>
     footer
-        background-color: slategray
+        background-color: #424242
         width: 100%
         height: 80px
         position: relative

@@ -18,12 +18,12 @@
 
 <style lang="sass" scoped>
     header
-        background-color: slategray
+        background-color: #424242
         width: 100%
         height: 80px
-        position: fixed
+        position: relative
         display: flex
         flex-direction: row
-        padding: 1% 5% 1% 5%
+        padding: 0 5% 0 5%
         box-sizing: border-box
 </style>

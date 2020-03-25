@@ -1,5 +1,5 @@
 <template lang="pug">
-    div(id="registration")
+    div(class="registration" id="contacts")
         div(id="legend") Связаться с нами
         form(id="input-form" method="post")
             input(
@@ -30,7 +30,7 @@
 </script>
 
 <style lang="sass" scoped>
-    #registration
+    .registration
         display: flex
         flex-direction: column
         margin: 5% 25% 0 25%

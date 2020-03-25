@@ -35,7 +35,7 @@
         display: flex
         flex-direction: row
         width: 20%
-        margin: 0
+        margin: 1% 0 1% 0
         justify-content: center
         flex-wrap: nowrap
         color: white

@@ -1,6 +1,6 @@
 <template lang="pug">
     div(id="block-text")
-        h5(id="title") {{title}}
+        h5(id="information_title" class="title") {{title}}
         p(id="text") {{text}}
 </template>
 
@@ -42,7 +42,8 @@
         height: auto
         color: black
 
-        #title
+        .title
+            font-size: 20px
 
         #text
             margin-top: 1%

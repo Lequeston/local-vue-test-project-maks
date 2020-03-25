@@ -1,21 +1,21 @@
 <template lang="pug">
     div(id="body")
-        InformationBlock(
-                v-for="info in informationBlocks"
-                :key="info.id"
-                v-bind="getInfo(info)"
-        )
+        MainTopPicture
+        Courses(:informationBlocks="informationBlocks")
+        Video
         Registration
         GeneralInformation
 </template>
 
 <script>
     import Registration from "@/components/Registration.vue";
-    import InformationBlock from "@/components/InformationBlock.vue";
     import GeneralInformation from "@/components/GeneralInformation.vue";
+    import MainTopPicture from "@/components/MainTopPicture";
+    import Courses from "@/components/Courses";
+    import Video from "@/components/Video";
     export default {
         name: "Main",
-        components: {GeneralInformation, InformationBlock, Registration},
+        components: {Video, Courses, MainTopPicture, GeneralInformation, Registration},
         data(){
             return{
                 informationBlocks: [
@@ -57,20 +57,13 @@
                     },
                 ]
             }
-        },
-        methods: {
-            getInfo(info){
-                let newInfo = {...info};
-                delete newInfo.id;
-                return newInfo;
-            }
         }
     }
 </script>
 
 <style lang="sass" scoped>
     #body
-        padding: 5% 0 5% 0
+        padding: 0 0 5% 0
         display: flex
         flex-direction: column
         width: 100%

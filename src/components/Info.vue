@@ -25,6 +25,7 @@
         justify-content: space-between
         flex: 1
         width: 20%
+        margin: 1% 0 1% 0
         color: white
 
         #numberPhone
