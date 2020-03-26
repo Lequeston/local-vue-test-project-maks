@@ -3,6 +3,7 @@
         MainTopPicture
         Courses(:informationBlocks="informationBlocks")
         Video
+        GraduateInformation
         Registration
         GeneralInformation
 </template>
@@ -13,9 +14,10 @@
     import MainTopPicture from "@/components/MainTopPicture";
     import Courses from "@/components/Courses";
     import Video from "@/components/Video";
+    import GraduateInformation from "@/components/GraduateInformation";
     export default {
         name: "Main",
-        components: {Video, Courses, MainTopPicture, GeneralInformation, Registration},
+        components: {GraduateInformation, Video, Courses, MainTopPicture, GeneralInformation, Registration},
         data(){
             return{
                 informationBlocks: [
