@@ -1,10 +1,14 @@
 <template lang="pug">
     footer
+        p(class="text") &copy;{{text}}
 </template>
 
 <script>
     export default {
         name: "Footer",
+        props:{
+            text: String
+        },
         components: {}
     }
 </script>
@@ -17,6 +21,12 @@
         position: relative
         display: flex
         flex-direction: row
-        padding: 1% 5% 1% 5%
         box-sizing: border-box
+        justify-content: space-between
+        padding: 10px 30px 10px 30px
+        align-items: center
+        align-content: center
+
+        .text
+            color: white
 </style>
