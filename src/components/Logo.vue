@@ -8,11 +8,13 @@
 <script>
     export default {
         name: "Logo.vue",
+        props:{
+            link: String,
+            title: String,
+        },
         data(){
             return{
-                link: 'https://c7.hotpng.com/preview/1009/720/961/logo-hawk-bird-bird.jpg',
                 picture: Image,
-                titleHomeWordsArray: ['Название', 'Сайта'],
             }
         },
         computed: {
@@ -25,6 +27,10 @@
 
                 image.src = this.link;
                 return 'image download';
+            },
+            titleHomeWordsArray(){
+                let {title} = this;
+                return (title !== undefined) ? title.split(' ') : [];
             }
         }
     }

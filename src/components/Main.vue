@@ -1,11 +1,11 @@
 <template lang="pug">
     div(id="body")
-        MainTopPicture
-        Courses(:informationBlocks="informationBlocks")
-        Video
-        GraduateInformation
-        Registration
-        GeneralInformation
+        MainTopPicture(v-bind="mainTopPicture")
+        Courses(v-bind="courses")
+        Video(v-bind="video")
+        GraduateInformation(v-bind="graduateInformation")
+        Registration(v-bind="registration")
+        GeneralInformation(v-bind="generalInformation")
 </template>
 
 <script>
@@ -17,67 +17,15 @@
     import GraduateInformation from "@/components/GraduateInformation";
     export default {
         name: "Main",
+        props: {
+            courses: Object,
+            mainTopPicture: Object,
+            video: Object,
+            graduateInformation: Object,
+            registration: Object,
+            generalInformation: Object
+        },
         components: {GraduateInformation, Video, Courses, MainTopPicture, GeneralInformation, Registration},
-        data(){
-            return{
-                informationBlocks: [
-                    {
-                        id: 0,
-                        link: 'https://uprav.ru/crop/w170h134/85/upload/iblock/36f/36f862757b787d544a512ee7e63ed1dc.jpg',
-                        title: 'директор компании',
-                        price: '47 175',
-                        briefInformation: 'Повышение квалификации, 40 ак. часов',
-                        dates: ['30 марта - 03 апреля 2020 — Москва',
-                            '04-08 мая 2020 — Санкт-Петербург'],
-                    },
-                    {
-                        id: 1,
-                        link: 'https://uprav.ru/crop/w170h134/85/upload/iblock/36f/36f862757b787d544a512ee7e63ed1dc.jpg',
-                        title: 'директор компании',
-                        price: '47 175',
-                        briefInformation: 'Повышение квалификации, 40 ак. часов',
-                        dates: ['30 марта - 03 апреля 2020 — Москва',
-                            '04-08 мая 2020 — Санкт-Петербург'],
-                    },
-                    {
-                        id: 2,
-                        link: 'https://uprav.ru/crop/w170h134/85/upload/iblock/36f/36f862757b787d544a512ee7e63ed1dc.jpg',
-                        title: 'директор компании',
-                        price: '47 175',
-                        briefInformation: 'Повышение квалификации, 40 ак. часов',
-                        dates: ['30 марта - 03 апреля 2020 — Москва',
-                            '04-08 мая 2020 — Санкт-Петербург'],
-                    },
-                    {
-                        id: 3,
-                        link: 'https://uprav.ru/crop/w170h134/85/upload/iblock/36f/36f862757b787d544a512ee7e63ed1dc.jpg',
-                        title: 'директор компании',
-                        price: '47 175',
-                        briefInformation: 'Повышение квалификации, 40 ак. часов',
-                        dates: ['30 марта - 03 апреля 2020 — Москва',
-                            '04-08 мая 2020 — Санкт-Петербург'],
-                    },
-                    {
-                        id: 4,
-                        link: 'https://uprav.ru/crop/w170h134/85/upload/iblock/36f/36f862757b787d544a512ee7e63ed1dc.jpg',
-                        title: 'директор компании',
-                        price: '47 175',
-                        briefInformation: 'Повышение квалификации, 40 ак. часов',
-                        dates: ['30 марта - 03 апреля 2020 — Москва',
-                            '04-08 мая 2020 — Санкт-Петербург'],
-                    },
-                    {
-                        id: 5,
-                        link: 'https://uprav.ru/crop/w170h134/85/upload/iblock/36f/36f862757b787d544a512ee7e63ed1dc.jpg',
-                        title: 'директор компании',
-                        price: '47 175',
-                        briefInformation: 'Повышение квалификации, 40 ак. часов',
-                        dates: ['30 марта - 03 апреля 2020 — Москва',
-                            '04-08 мая 2020 — Санкт-Петербург'],
-                    },
-                ]
-            }
-        }
     }
 </script>
 

@@ -1,15 +1,15 @@
 <template lang="pug">
-    div(id="ourCourses" class="courses")
-        div(class="title") {{title}}
-        InformationBlock(
-            v-for="info in viewArray"
-            :key="info.id"
-            v-bind="getInfo(info)"
-        )
-        ButtonPanel(
-            :onClickRightButton="onClickRightButton"
-            :onClickLeftButton="onClickLeftButton"
-        )
+        div(id="ourCourses" class="courses")
+            div(class="title") {{title}}
+            InformationBlock(
+                v-for="info in viewArray"
+                :key="info.id"
+                v-bind="getInfo(info)"
+            )
+            ButtonPanel(
+                :onClickRightButton="onClickRightButton"
+                :onClickLeftButton="onClickLeftButton"
+            )
 </template>
 
 <script>
@@ -21,11 +21,11 @@
     export default {
         name: "Courses",
         props:{
+            title: String,
             informationBlocks: Array,
         },
         data(){
             return{
-                title: 'Наши курсы',
                 visibleRange: {
                     start: 0,
                     end: DEFAULT_COUNT_VIEW,
@@ -83,6 +83,7 @@
 </script>
 
 <style lang="sass" scoped>
+
     .courses
         margin-top: 30px
         display: flex

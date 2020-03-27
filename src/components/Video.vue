@@ -2,16 +2,15 @@
     div(class="block-video")
         div(class="title") {{title}}
         div(class="video")
-            iframe(class="content" src="https://www.youtube.com/embed/t8zwdpkSRWs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+            iframe(class="content" :src="videoLink" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
 </template>
 
 <script>
     export default {
         name: "Video",
-        data(){
-            return{
-                title: 'Видео о нас',
-            }
+        props: {
+            title: String,
+            videoLink: String,
         }
     }
 </script>

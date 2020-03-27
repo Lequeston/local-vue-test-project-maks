@@ -29,7 +29,7 @@
         box-sizing: border-box
         padding: 0 15% 0 15%
 
-        $width: 40px
+        $width: 50px
         .link
             width: $width
             height: $width
@@ -39,10 +39,11 @@
                 display: flex
                 justify-content: center
                 align-items: center
+                align-content: center
                 background: inherit
                 border: 1px solid #424242
                 border-radius: 50%
-                font-size: $width
+                font-size: 40px
                 color: #424242
                 width: 100%
                 height: 100%

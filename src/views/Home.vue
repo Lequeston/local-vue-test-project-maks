@@ -1,7 +1,7 @@
 <template lang="pug">
   div(class="home")
-    Header
-    Main
+    Header(v-bind="information.header")
+    Main(v-bind="information.main")
     Footer
 </template>
 
@@ -10,13 +10,19 @@
 import Header from "@/components/Header.vue";
 import Main from "@/components/Main.vue";
 import Footer from "@/components/Footer.vue";
+import Information from '../assets/information';
 
 export default {
   name: 'Home',
   components: {
     Footer,
     Main,
-    Header
+    Header,
+  },
+  computed: {
+      information(){
+          return Information;
+      }
   }
 }
 </script>

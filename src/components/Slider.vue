@@ -8,16 +8,14 @@
 <script>
     export default {
         name: "Slider",
+        props: {
+            arrayImages: Array,
+        },
         data(){
             return{
                 imageIndex: 0,
                 picture: Image,
                 pictures: [],
-                arrayImages: [
-                    'https://avatars.mds.yandex.net/get-pdb/1369887/746dace4-efdb-4d53-a060-8de410e4d408/s1200?webp=false',
-                    'https://avatars.mds.yandex.net/get-pdb/1043578/1e859f55-f1de-44f5-b66b-4a0f5e2dc455/s1200?webp=false',
-                    'http://alenatv.kiev.ua/wp-content/uploads/2016/10/9N1A9002_1.jpg',
-                ]
             }
         },
         methods: {
@@ -29,20 +27,24 @@
                 this.imageIndex = (this.imageIndex === 0) ?  (this.arrayImages.length - 1) : (this.imageIndex - 1);
             },
 
-            loadImage(index){
-                if (this.pictures[index] == undefined){
-                    let image = new Image();
-
-                    image.onload = () => {
-                        this.picture = image;
-                        this.picture[index] = image;
-                    }
-
-                    image.src = this.arrayImages[index];
-                    return 'image download';
+            loadImage(index) {
+                if (this.arrayImages === undefined) {
+                    return 'array download';
                 } else {
-                    this.picture = this.picture[index];
-                    return 'image'
+                    if (this.pictures[index] === undefined) {
+                        let image = new Image();
+
+                        image.onload = () => {
+                            this.picture = image;
+                            this.picture[index] = image;
+                        }
+
+                        image.src = this.arrayImages[index];
+                        return 'image download';
+                    } else {
+                        this.picture = this.picture[index];
+                        return 'image'
+                    }
                 }
             }
         }

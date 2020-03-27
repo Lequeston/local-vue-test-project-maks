@@ -1,25 +1,18 @@
 <template lang="pug">
     div(id="menu")
         a(
-            v-for="(linkName, link) in linksName"
-            :href="`#${link}`"
-            :id="`new${link}`"
-        ) {{linkName}}
+            v-for="button in buttons"
+            :href="`#${button.anchor}`"
+            :id="`new${button.anchor}`"
+        ) {{button.title}}
 </template>
 
 <script>
     export default {
         name: "Menu",
-        data(){
-            return{
-                linksName: {
-                    information_title: 'Информация',
-                    ourCourses: 'Наши курсы',
-                    contacts: 'Контакты'
-                }
-
-            }
-        }
+        props: {
+            buttons: Array,
+        },
     }
 </script>
 

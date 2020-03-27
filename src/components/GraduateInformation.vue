@@ -2,20 +2,17 @@
     div(class="graduate-information")
         div(class="title") {{title}}
         div(class="information") {{info}}
-        Slider(class="slider")
+        Slider(class="slider" v-bind="slider")
 </template>
 
 <script>
     import Slider from "@/components/Slider";
     export default {
         name: "GraduateInformation",
-        data(){
-            return{
-                title: "Наши выпускники",
-                info: "Единство предмета речи — это тема высказывания. Тема — это смысловое ядро текста, конденсированное и обобщённое содержание текста.\n" +
-                    "\n" +
-                    "Понятие «содержание высказывания» связано с категорией информативности речи и присуще только тексту. Оно сообщает читателю индивидуально-авторское понимание отношений между явлениями, их значимости во всех сферах придают ему смысловую цельность. ",
-            }
+        props: {
+            title: String,
+            info: String,
+            slider: Object,
         },
         components: {Slider}
     }

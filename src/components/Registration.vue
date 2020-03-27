@@ -3,7 +3,7 @@
         div(id="legend") Связаться с нами
         form(id="input-form" method="post")
             input(
-                    v-for="(name, property) in registration"
+                    v-for="(name, property) in registrationName"
                     class="registration-input"
                     :placeholder="name"
                     :key="property"
@@ -15,16 +15,14 @@
 <script>
     export default {
         name: "Registration",
-        data(){
-            return {
-                registration: {
-                    name: 'Как вас зовут?',
-                    email: 'E-mail',
-                    numberPhone: 'Телефон',
-                },
-                information: 'Ваш комментарий',
-                buttonText: 'Отправить',
-            }
+        props: {
+            registrationName: {
+                name: String,
+                email: String,
+                numberPhone: String,
+            },
+            information: String,
+            buttonText: String
         }
     }
 </script>

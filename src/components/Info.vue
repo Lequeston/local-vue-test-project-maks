@@ -1,25 +1,23 @@
 <template lang="pug">
-    div(id="info")
-        div(id="numberPhone") {{ numberPhone }}
-        div(id="workingHours") {{ workingHours }}
-        div(id="town") {{ town }}
+    div(class="info")
+        div(class="numberPhone") {{ numberPhone }}
+        div(class="workingHours") {{ workingHours }}
+        div(class="town") {{ town }}
 </template>
 
 <script>
     export default {
         name: "Info",
-        data(){
-            return{
-                numberPhone: '8(800)553-53-55',
-                workingHours: 'Пн.-Пт.: 8:00-19:00',
-                town: 'Москва',
-            }
-        }
+        props: {
+            numberPhone: String,
+            workingHours: String,
+            town: String,
+        },
     }
 </script>
 
 <style lang="sass" scoped>
-    #info
+    .info
         display: flex
         flex-direction: column
         justify-content: space-between
@@ -28,12 +26,12 @@
         margin: 1% 0 1% 0
         color: white
 
-        #numberPhone
+        .numberPhone
             font-size: 20px
 
-        #workingHours
+        .workingHours
             font-size: 15px
 
-        #town
+        .town
             font-size: 15px
 </style>

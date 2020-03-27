@@ -1,7 +1,7 @@
 <template lang="pug">
     div(id="main-top-picture")
         div(id="main-top-background")
-            TopTitle
+            TopTitle(v-bind="topTitle")
         a(class="button" :href="`#${buttonLink}`") {{buttonName}}
 </template>
 
@@ -9,12 +9,11 @@
     import TopTitle from "@/components/TopTitle";
     export default {
         name: "MainTopPicture",
-        data(){
-            return{
-                buttonName: "Узнать подробнее",
-                buttonLink: "contacts",
-                info: 'Оставьте заявку на сайте, и мы свяжемся с Вами в ближайшее время!',
-            }
+        props: {
+            buttonName: String,
+            buttonLink: String,
+            info: String,
+            topTitle: Object
         },
         components: {TopTitle}
     }

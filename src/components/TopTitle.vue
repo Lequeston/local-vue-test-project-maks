@@ -7,11 +7,9 @@
 <script>
     export default {
         name: "TopTitle",
-        data(){
-            return{
-                title: 'Федральный учебный центр',
-                info: "Основан в 2002 году",
-            }
+        props: {
+            title: String,
+            info: String
         }
     }
 </script>

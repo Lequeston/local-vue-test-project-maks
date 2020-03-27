@@ -1,14 +1,11 @@
 <template lang="pug">
     footer
-        Logo
 </template>
 
 <script>
-    import Logo from "./Logo.vue";
-
     export default {
         name: "Footer",
-        components: {Logo}
+        components: {}
     }
 </script>
 

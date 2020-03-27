@@ -1,8 +1,8 @@
 <template lang="pug">
     header
-        Logo
-        Menu
-        Info
+        Logo(v-bind="logo")
+        Menu(v-bind="menu")
+        Info(v-bind="info")
 </template>
 
 <script>
@@ -12,6 +12,11 @@
 
     export default {
         name: "Header",
+        props: {
+            logo: Object,
+            menu: Object,
+            info: Object
+        },
         components: {Info, Menu, Logo}
     }
 </script>
