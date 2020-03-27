@@ -52,6 +52,7 @@
 </script>
 
 <style lang="sass" scoped>
+
     .slider
         width: 700px
         height: auto

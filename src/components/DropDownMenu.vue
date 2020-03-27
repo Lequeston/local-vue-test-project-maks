@@ -48,7 +48,6 @@
             height: auto
             width: 100%
             box-sizing: border-box
-            padding: 3px 5px 3px 5px
 
             .element
                 width: 100%
@@ -64,4 +63,7 @@
                     width: 100%
                     height: 100%
                     text-decoration: none
+
+            .element:hover
+                background: #424242
 </style>

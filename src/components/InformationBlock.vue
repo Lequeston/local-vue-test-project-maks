@@ -58,7 +58,7 @@
         width: 80%
         height: auto
         padding: 1% 1% 0 1%
-        margin: 0 10% 0 10%
+        margin: 10px 10% 10px 10%
         border-bottom: 1px solid #DEDFE2
         box-sizing: border-box
 
@@ -122,4 +122,9 @@
                     #date
                         color: inherit
                         margin: 0 auto 5px 0
+
+    #information-block:hover
+        transition: all .5s
+        transform: scale(1.1, 1.1)
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 </style>
