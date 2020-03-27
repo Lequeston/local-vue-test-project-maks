@@ -1,5 +1,5 @@
 <template lang="pug">
-    div(class="graduate-information")
+    div(class="graduate-information" id="student-info")
         div(class="title") {{title}}
         div(class="information") {{info}}
         Slider(class="slider" v-bind="slider")

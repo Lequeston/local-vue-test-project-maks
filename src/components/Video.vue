@@ -1,5 +1,5 @@
 <template lang="pug">
-    div(class="block-video")
+    div(class="block-video" id="video")
         div(class="title") {{title}}
         div(class="video")
             iframe(class="content" :src="videoLink" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)

@@ -32,24 +32,12 @@
     "dropMenuRight": {
       "elements": [
         {
-          "name": "Видео",
-          "anchor": ""
+          "name": "Видео о нас",
+          "anchor": "video"
         },
         {
-          "name": "Видео",
-          "anchor": ""
-        },
-        {
-          "name": "Видео",
-          "anchor": ""
-        },
-        {
-          "name": "Видео",
-          "anchor": ""
-        },
-        {
-          "name": "Видео",
-          "anchor": ""
+          "name": "Наши выпускники",
+          "anchor": "student-info"
         }
       ]
     }

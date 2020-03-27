@@ -8,7 +8,13 @@
                 :menuHide="menuHide"
             )
             Info(v-bind="info")
-        dropDownMenu(v-show="isVisible" class="dropMenu" v-bind="dropMenuRight")
+        dropDownMenu(
+            v-show="isVisible"
+            class="dropMenu"
+            v-bind="dropMenuRight"
+            :menuAppearance="menuAppearance"
+            :menuHide="menuHide"
+        )
 </template>
 
 <script>
