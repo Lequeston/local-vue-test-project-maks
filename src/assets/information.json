@@ -27,7 +27,33 @@
       "numberPhone": "8(800)553-53-55",
       "workingHours": "Пн.-Пт.: 8:00-19:00",
       "town": "Москва"
+    },
+
+    "dropMenuRight": {
+      "elements": [
+        {
+          "name": "Видео",
+          "anchor": ""
+        },
+        {
+          "name": "Видео",
+          "anchor": ""
+        },
+        {
+          "name": "Видео",
+          "anchor": ""
+        },
+        {
+          "name": "Видео",
+          "anchor": ""
+        },
+        {
+          "name": "Видео",
+          "anchor": ""
+        }
+      ]
     }
+
   },
   "main": {
 

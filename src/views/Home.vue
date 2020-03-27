@@ -2,7 +2,7 @@
   div(class="home")
     Header(v-bind="information.header")
     Main(v-bind="information.main")
-    Footer
+    Footer(v-bind="information.footer")
 </template>
 
 <script>

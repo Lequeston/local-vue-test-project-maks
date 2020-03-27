@@ -4,6 +4,8 @@
             v-for="button in buttons"
             :href="`#${button.anchor}`"
             :id="`new${button.anchor}`"
+            @mouseover="over(button.title)"
+            @mouseleave="leave(button.title)"
         ) {{button.title}}
 </template>
 
@@ -12,7 +14,21 @@
         name: "Menu",
         props: {
             buttons: Array,
+            menuHide: Function,
+            menuAppearance: Function,
         },
+        methods: {
+            over(title){
+                if(title === "Контакты"){
+                    this.menuAppearance();
+                }
+            },
+            leave(title){
+                if(title === "Контакты"){
+                    this.menuHide();
+                }
+            }
+        }
     }
 </script>
 
